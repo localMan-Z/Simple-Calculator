@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Inder&family=Lexend+Tera:wght@100..900&family=Radio+Canada:ital,wght@0,300..700;1,300..700&family=Slackside+One&family=Sniglet:wght@400;800&display=swap");
+@font-face {
+  font-family: "Seven Segment";
+  src: url(/Seven\ Segment.woff) format("woff");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #Calculator {
+    width: 350px;
+    height: 550px;
+    border: 1px solid black;
+    background-color: lighten(black, 15%);
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    padding: 10px;
+    #display {
+      display: grid;
+      background-color: lighten(green, 70%);
+      width: 100%;
+      #upperText,
+      #lowerText {
+        text-align: right;
+        font-size: 1.85em;
+        font-family: "Seven Segment", serif;
+        padding: 5px;
+      }
+    }
+    #operators {
+      background-color: lighten(black, 30%);
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      background-color: red;
+      #numberOperators {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        .number {
+          background-color: lighten(black, 30%);
+          border: none;
+          font-family: "Sniglet", system-ui;
+        }
+      }
+      #functionalOperators {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        .basics {
+          background-color: lighten(black, 30%);
+          border: none;
+          font-family: "Sniglet", system-ui;
+        }
+
+        .complex {
+          background-color: lighten(black, 30%);
+          border: none;
+          font-family: "Sniglet", system-ui;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,246 @@
+@font-face {
+  font-family: 'East Sea Dokdo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/eastseadokdo/v22/xfuo0Wn2V2_KanASqXSZp22m05_a.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inder';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inder/v14/w8gUH2YoQe8_4vq6.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lexend Tera';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexendtera/v27/RrQDbo98_jt_IXnBPwCWtYJLZ3P4hnaGKFiM5zITdg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lexend Tera';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexendtera/v27/RrQDbo98_jt_IXnBPwCWtYJLZ3P4hnaGKFiMZzMTdg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lexend Tera';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexendtera/v27/RrQDbo98_jt_IXnBPwCWtYJLZ3P4hnaGKFiMuTMTdg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lexend Tera';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexendtera/v27/RrQDbo98_jt_IXnBPwCWtYJLZ3P4hnaGKFiM5zMTdg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lexend Tera';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexendtera/v27/RrQDbo98_jt_IXnBPwCWtYJLZ3P4hnaGKFiM1TMTdg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lexend Tera';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexendtera/v27/RrQDbo98_jt_IXnBPwCWtYJLZ3P4hnaGKFiMOTQTdg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lexend Tera';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexendtera/v27/RrQDbo98_jt_IXnBPwCWtYJLZ3P4hnaGKFiMADQTdg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lexend Tera';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexendtera/v27/RrQDbo98_jt_IXnBPwCWtYJLZ3P4hnaGKFiMZzQTdg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lexend Tera';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexendtera/v27/RrQDbo98_jt_IXnBPwCWtYJLZ3P4hnaGKFiMTjQTdg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Radio Canada';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/radiocanada/v21/XRX33ISXn0dBMcibU6jlAqrdcwAMBJuK9IgQn4bfnSrKcMQM2cGQ1WSE0rWLLuM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Radio Canada';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/radiocanada/v21/XRX33ISXn0dBMcibU6jlAqrdcwAMBJuK9IgQn4bfnSrKcMQM2cGQ1WSE0uuLLuM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Radio Canada';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/radiocanada/v21/XRX33ISXn0dBMcibU6jlAqrdcwAMBJuK9IgQn4bfnSrKcMQM2cGQ1WSE0tmLLuM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Radio Canada';
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/radiocanada/v21/XRX33ISXn0dBMcibU6jlAqrdcwAMBJuK9IgQn4bfnSrKcMQM2cGQ1WSE0jWMLuM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Radio Canada';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/radiocanada/v21/XRX33ISXn0dBMcibU6jlAqrdcwAMBJuK9IgQn4bfnSrKcMQM2cGQ1WSE0gyMLuM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Radio Canada';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/radiocanada/v21/XRX13ISXn0dBMcibU6jlAqr3ejLv5OLZYiYXik6db2P4jxxlsls-0nESkQPI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Radio Canada';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/radiocanada/v21/XRX13ISXn0dBMcibU6jlAqr3ejLv5OLZYiYXik6db2P4jxxlsls-0nFMkQPI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Radio Canada';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/radiocanada/v21/XRX13ISXn0dBMcibU6jlAqr3ejLv5OLZYiYXik6db2P4jxxlsls-0nF-kQPI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Radio Canada';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/radiocanada/v21/XRX13ISXn0dBMcibU6jlAqr3ejLv5OLZYiYXik6db2P4jxxlsls-0nGSlgPI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Radio Canada';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/radiocanada/v21/XRX13ISXn0dBMcibU6jlAqr3ejLv5OLZYiYXik6db2P4jxxlsls-0nGrlgPI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Slackside One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/slacksideone/v10/EJRQQgMrXdcGsiBuvnRxodTwVy4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sniglet';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sniglet/v17/cIf9MaFLtkE3UjaJxCk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sniglet';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sniglet/v17/cIf4MaFLtkE3UjaJ_ImHRGE.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Seven Segment";
+  src: url(/Seven\ Segment.woff) format("woff");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #Calculator {
+  width: 350px;
+  height: 550px;
+  border: 1px solid black;
+  background-color: #262626;
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 1fr 8fr;
+  padding: 10px;
+}
+body #Calculator #display {
+  display: grid;
+  background-color: #e6ffe6;
+  width: 100%;
+}
+body #Calculator #display #upperText,
+body #Calculator #display #lowerText {
+  text-align: right;
+  font-size: 1.85em;
+  font-family: "Seven Segment", serif;
+  padding: 5px;
+}
+body #Calculator #operators {
+  background-color: #4d4d4d;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  background-color: red;
+}
+body #Calculator #operators #numberOperators {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+body #Calculator #operators #numberOperators .number {
+  background-color: #4d4d4d;
+  border: none;
+  font-family: "Sniglet", system-ui;
+}
+body #Calculator #operators #functionalOperators {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+body #Calculator #operators #functionalOperators .basics {
+  background-color: #4d4d4d;
+  border: none;
+  font-family: "Sniglet", system-ui;
+}
+body #Calculator #operators #functionalOperators .complex {
+  background-color: #4d4d4d;
+  border: none;
+  font-family: "Sniglet", system-ui;
+}
