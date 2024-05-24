@@ -1,127 +1,29 @@
 /* eslint-disable no-useless-escape */
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useState } from "react";
+import { useCurrentState } from "./stateDIstributer";
+import { AppendNumberF } from "./numbers.JSX";
 import "./App.css";
 
 function App() {
-  let [textDisplayed, setTextDisplayed] = useState("");
-  let [operatorInUse, setOperatorInUse] = useState("");
-  let [previousOperator, setPreviousOperator] = useState("");
-  let [result, setResult] = useState("");
-  let [operatorState, setOperatorState] = useState(false);
-  let [hybridState, setHybridState] = useState(false);
-  let [complexInitializedFirst, setComplexInitializedFirst] = useState(false);
-  let [alternateComplexPieState, setAlternateComplexPieState] = useState(false);
-  let [hybridPieState, setHybridPieState] = useState(false);
-
-  function appendNumber(event) {
-    let complexOperatorState = false;
-    let complexPieState = false;
-    let number = event.target.getAttribute("data-number");
-    let operatorWithPie = textDisplayed.substring(textDisplayed.length - 2);
-    let indexOfOperator = textDisplayed.indexOf(operatorInUse);
-    let secondNumber;
-    if (indexOfOperator > 0) {
-      secondNumber = textDisplayed.substring(indexOfOperator + 1);
-    }
-    if (textDisplayed.startsWith("\u03c0") && operatorWithPie == "") {
-      return;
-    } else if (textDisplayed.startsWith("\u03c0") && operatorWithPie != "") {
-      if (textDisplayed[textDisplayed.length - 2] == "\u03c0") {
-        return;
-      }
-    } else if (textDisplayed != "" && operatorInUse != "" && number == "pie") {
-      complexPieState = true;
-      if (textDisplayed.endsWith("\u03c0")) {
-        return;
-      } else {
-        number = `${textDisplayed}\u03c0`;
-      }
-    }
-    if (
-      textDisplayed.startsWith("\u2212") &&
-      textDisplayed.includes("\u03c0") &&
-      number
-    ) {
-      if (textDisplayed.endsWith("\u03c0")) {
-        return;
-      } else if (operatorWithPie != "") {
-        number;
-        alternateComplexPieState = true;
-        setAlternateComplexPieState(alternateComplexPieState);
-      } else {
-        return;
-      }
-    }
-    if (textDisplayed.includes(number) && number == "." && secondNumber == "") {
-      number = "";
-    } else if (secondNumber) {
-      if (secondNumber.includes(number) && number == ".") {
-        number = "";
-      }
-      if (secondNumber.includes("\u03c0")) {
-        return;
-      }
-    }
-    if (number == "pie") {
-      number = "\u03c0 ";
-    }
-    if (
-      textDisplayed.startsWith("\u221a") ||
-      textDisplayed.startsWith("\u221b") ||
-      textDisplayed.startsWith("\u221c") ||
-      textDisplayed.startsWith("Tan") ||
-      textDisplayed.startsWith("Cos") ||
-      textDisplayed.startsWith("Sin")
-    ) {
-      complexOperatorState = true;
-      complexInitializedFirst = true;
-      setComplexInitializedFirst(complexInitializedFirst);
-    }
-    if (
-      textDisplayed.includes("\u221a") ||
-      textDisplayed.includes("\u221b") ||
-      textDisplayed.includes("\u221c") ||
-      textDisplayed.includes("Tan") ||
-      textDisplayed.includes("Sin") ||
-      textDisplayed.includes("Cos")
-    ) {
-      if (!textDisplayed.endsWith("\u03c0")) {
-        complexInitializedFirst
-          ? ((hybridState = false), setHybridState(hybridState))
-          : (hybridState = true),
-          setHybridState(hybridState);
-        if (
-          textDisplayed.startsWith("\u2212") &&
-          textDisplayed.includes("\u03c0") &&
-          hybridState == true
-        ) {
-          hybridPieState = true;
-          setHybridPieState(hybridPieState);
-        }
-        if (isNaN(textDisplayed.substring(textDisplayed.length - 1))) {
-          textDisplayed = `${textDisplayed} `;
-        } else {
-          textDisplayed;
-        }
-      } else {
-        return;
-      }
-    }
-    number == "\u03c0" || complexPieState
-      ? (textDisplayed = number)
-      : (textDisplayed += number);
-    setTextDisplayed(textDisplayed);
-    setNumbers(
-      textDisplayed,
-      true,
-      true,
-      complexOperatorState,
-      complexPieState,
-      hybridState
-    );
-  }
-
+  let {
+    textDisplayed,
+    result,
+    operatorInUse,
+    alternateComplexPieState,
+    setAlternateComplexPieState,
+    complexInitializedFirst,
+    setComplexInitializedFirst,
+    hybridState,
+    setHybridState,
+    hybridPieState,
+    setHybridPieState,
+    setTextDisplayed,
+    setOperatorInUse,
+    operatorState,
+    setResult,
+    setOperatorState,
+  } = useCurrentState();
+  const { appendNumberF } = AppendNumberF();
   function appendOperator(event) {
     let complexPieState = false;
     let operatorInitializedFirst = false;
@@ -382,40 +284,44 @@ function App() {
         </div>
         <div id="operators">
           <div id="numberOperators">
-            <button className="number" data-number="7" onClick={appendNumber}>
+            <button className="number" data-number="7" onClick={appendNumberF}>
               7
             </button>
-            <button className="number" data-number="8" onClick={appendNumber}>
+            <button className="number" data-number="8" onClick={appendNumberF}>
               8
             </button>
-            <button className="number" data-number="9" onClick={appendNumber}>
+            <button className="number" data-number="9" onClick={appendNumberF}>
               9
             </button>
-            <button className="number" data-number="4" onClick={appendNumber}>
+            <button className="number" data-number="4" onClick={appendNumberF}>
               4
             </button>
-            <button className="number" data-number="5" onClick={appendNumber}>
+            <button className="number" data-number="5" onClick={appendNumberF}>
               5
             </button>
-            <button className="number" data-number="6" onClick={appendNumber}>
+            <button className="number" data-number="6" onClick={appendNumberF}>
               6
             </button>
-            <button className="number" data-number="1" onClick={appendNumber}>
+            <button className="number" data-number="1" onClick={appendNumberF}>
               1
             </button>
-            <button className="number" data-number="2" onClick={appendNumber}>
+            <button className="number" data-number="2" onClick={appendNumberF}>
               2
             </button>
-            <button className="number" data-number="3" onClick={appendNumber}>
+            <button className="number" data-number="3" onClick={appendNumberF}>
               3
             </button>
-            <button className="number" data-number="0" onClick={appendNumber}>
+            <button className="number" data-number="0" onClick={appendNumberF}>
               0
             </button>
-            <button className="number" data-number="." onClick={appendNumber}>
+            <button className="number" data-number="." onClick={appendNumberF}>
               .
             </button>
-            <button className="number" data-number="pie" onClick={appendNumber}>
+            <button
+              className="number"
+              data-number="pie"
+              onClick={appendNumberF}
+            >
               {"\u03c0"}
             </button>
           </div>
