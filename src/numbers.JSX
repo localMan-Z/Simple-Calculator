@@ -1,6 +1,8 @@
 import { useCurrentState } from "./stateDIstributer";
+import { SetNumbers } from "./set.JSX";
 
 function initial(parameter) {
+  const { setNumbers } = SetNumbers();
   let {
     event,
     textDisplayed,
@@ -14,7 +16,6 @@ function initial(parameter) {
     hybridPieState,
     setHybridPieState,
     setTextDisplayed,
-    setNumbers,
   } = parameter;
 
   let complexOperatorState = false;
