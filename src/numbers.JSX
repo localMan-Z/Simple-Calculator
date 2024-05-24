@@ -1,10 +1,10 @@
-import { useCurrentState } from "./stateDIstributer";
+import { useCurrentState } from "./contextJs/stateDIstributer";
 import { SetNumbers } from "./set.JSX";
 
-function initial(parameter) {
+function initial(event, parameter) {
+  console.log("clicked");
   const { setNumbers } = SetNumbers();
   let {
-    event,
     textDisplayed,
     operatorInUse,
     alternateComplexPieState,
@@ -127,7 +127,6 @@ function initial(parameter) {
 
 export function AppendNumberF() {
   let {
-    event,
     textDisplayed,
     operatorInUse,
     alternateComplexPieState,
@@ -142,9 +141,8 @@ export function AppendNumberF() {
     setNumbers,
   } = useCurrentState();
 
-  const appendNumberF = () => {
-    initial({
-      event,
+  const appendNumberF = (event) => {
+    initial(event, {
       textDisplayed,
       operatorInUse,
       alternateComplexPieState,

@@ -1,6 +1,6 @@
 /* eslint-disable no-useless-escape */
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useCurrentState } from "./stateDIstributer";
+import useCurrentState from "./contextJs/currentContext";
 import { AppendNumberF } from "./numbers.JSX";
 import { RenderOperators } from "./operators.JSX";
 import "./App.css";
